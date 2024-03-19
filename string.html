@@ -7,6 +7,7 @@
 </head>
 <body>
     <p id="demo"></p>
+    <button onclick="window.print()">Click to print</button>
     <script>
         // let str1 = "I am a developer";
         // let str2 = "I am an Engineer";
@@ -18,9 +19,21 @@
         // document.getElementById("demo").innerHTML=text.length;
         // console.log("/f")
 
-        let x = "Jhon";
-        let y = new String("Jhon");
-        document.getElementById("demo").innerHTML=typeof x +"<br/>"+ typeof y;
+        // let x = "Jhon";
+        // let y = new String("Jhon");
+        // document.getElementById("demo").innerHTML=typeof x +"<br/>"+ typeof y;
+
+       let a = prompt("Enter your age")  
+       let b = parseInt(a)
+
+       if(b>18){
+         alert("you can drive")
+       }
+       else{
+        alert("you can not drive now")
+       }
+
+       document.getElementById("demo").innerHTML=b+typeof b;
     </script>
 </body>
 </html>
